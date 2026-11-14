@@ -1,0 +1,6 @@
+{
+  "name": "S & J Garden Wedding · 婚礼指南",
+  "description": "Interactive pastel watercolor garden wedding guide and Flappy Love mini-game for S & J (19.12.2026).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

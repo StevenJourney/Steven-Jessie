@@ -1,0 +1,42 @@
+[
+  {
+    "id": "seed-1",
+    "name": "伴郎团 Kevin",
+    "tableNumber": "主桌 VIP",
+    "score": 18,
+    "character": "couple",
+    "updatedAt": "2026-12-19T08:15:00.000Z"
+  },
+  {
+    "id": "seed-2",
+    "name": "伴娘 Chloe",
+    "tableNumber": "Table 2",
+    "score": 14,
+    "character": "dove",
+    "updatedAt": "2026-12-19T08:18:00.000Z"
+  },
+  {
+    "id": "seed-3",
+    "name": "S & J",
+    "tableNumber": "Sweetheart",
+    "score": 12,
+    "character": "couple",
+    "updatedAt": "2026-12-19T08:10:00.000Z"
+  },
+  {
+    "id": "seed-4",
+    "name": "Momo",
+    "tableNumber": "Table 5",
+    "score": 9,
+    "character": "dove",
+    "updatedAt": "2026-12-19T08:22:00.000Z"
+  },
+  {
+    "id": "seed-5",
+    "name": "Uncle Lin",
+    "tableNumber": "Table 1",
+    "score": 6,
+    "character": "dove",
+    "updatedAt": "2026-12-19T08:25:00.000Z"
+  }
+]

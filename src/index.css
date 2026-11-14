@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cormorant Garamond', 'Noto Serif SC', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #fcf9f4;
+    color: #2c2a29;
+    overscroll-behavior-y: contain;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes floatBob {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translate3d(0, -10%, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  88% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate3d(55px, 115%, 0) rotate(260deg);
+    opacity: 0;
+  }
+}
+
+@keyframes waterRipple {
+  0%, 100% {
+    transform: scaleX(0.92) scaleY(0.96);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scaleX(1.08) scaleY(1.04);
+    opacity: 0.75;
+  }
+}
+
+@keyframes guestStroll {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(26px, -8px, 0);
+  }
+}
+
+@keyframes treeSway {
+  0%, 100% {
+    transform: rotate(-1.6deg);
+  }
+  50% {
+    transform: rotate(1.6deg);
+  }
+}
+
+.animate-float-bob {
+  animation: floatBob 3.2s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 2.6s ease-in-out infinite;
+}
+
+.animate-petal {
+  animation: petalFall linear infinite;
+}
+
+.animate-ripple {
+  animation: waterRipple 4.2s ease-in-out infinite;
+}
+
+.animate-stroll {
+  animation: guestStroll 7.5s ease-in-out infinite;
+}
+
+.animate-sway {
+  transform-origin: bottom center;
+  animation: treeSway 4.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-bob,
+  .animate-twinkle,
+  .animate-petal,
+  .animate-ripple,
+  .animate-stroll,
+  .animate-sway {
+    animation: none !important;
+  }
+}
+
+/* Custom subtle scrollbars for drawers and stall strips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
